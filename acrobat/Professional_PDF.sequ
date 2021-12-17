@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://ns.adobe.com/acrobat/workflow/2012" title="Professional_PDF" description="" majorVersion="1" minorVersion="0">
+	<Sources>
+		<Folder path="/C/Dev/AEM Cloud/DevOps/PrePare_Files"/>
+	</Sources>
+	<Group label="Prepare Modules">
+		<Instruction label="In this first step, you will need to manually add the Course Name (left) and Module Title (right) in the footer. " pauseBefore="false"/>
+		<Command name="COMP:AddHeadFoot" pauseBefore="false" promptUser="true">
+			<Items>
+				<Items name="HeadFoot">
+					<Item name="Bates" type="boolean" value="false"/>
+					<Item name="Color1" type="double" value="0.000000"/>
+					<Item name="Color2" type="double" value="0.000000"/>
+					<Item name="Color3" type="double" value="0.000000"/>
+					<Item name="Color4" type="double" value="1.000000"/>
+					<Item name="ColorSpace" type="atom" value="DeviceRGB"/>
+					<Item name="DefaultFontCharset" type="atom" value="Roman"/>
+					<Item name="DefaultFontEncoding" type="atom" value="MacRomanEncoding"/>
+					<Item name="DefaultFontName" type="atom" value="AdobeClean-Regular"/>
+					<Item name="DefaultFontSize" type="double" value="8.000000"/>
+					<Item name="DefaultFontType" type="atom" value="Type1"/>
+					<Item name="Even" type="boolean" value="true"/>
+					<Items name="FOOTER">
+						<Items name="Foot">
+							<Items name="RIGHT">
+								<Item name="0Field" type="integer" value="1"/>
+								<Item name="0FontCharSet" type="atom" value="Roman"/>
+								<Item name="0FontEncoding" type="atom" value="MacRomanEncoding"/>
+								<Item name="0FontName" type="atom" value="AdobeClean-Regular"/>
+								<Item name="0FontSize" type="double" value="8.000000"/>
+								<Item name="0FontType" type="atom" value="Type1"/>
+								<Item name="0Style" type="integer" value="1"/>
+								<Items name="HeadFoot">
+									<Item name="Index" type="integer" value="5"/>
+								</Items>
+							</Items>
+						</Items>
+					</Items>
+					<Items name="HEADER"/>
+					<Item name="Odd" type="boolean" value="true"/>
+					<Item name="PageNumStart" type="integer" value="0"/>
+					<Item name="PrivSeqData" type="null"/>
+					<Item name="Replace" type="boolean" value="false"/>
+					<Item name="Underline" type="boolean" value="false"/>
+				</Items>
+				<Items name="HeadFootCmd">
+					<Item name="BottomMargin" type="double" value="36.000000"/>
+					<Item name="DateFormat" type="integer" value="0"/>
+					<Item name="END" type="integer" value="-1"/>
+					<Item name="LeftMargin" type="double" value="72.000000"/>
+					<Item name="MAKE_OPTIONAL" type="boolean" value="true"/>
+					<Item name="PageFormat" type="integer" value="3"/>
+					<Item name="RightMargin" type="double" value="72.000000"/>
+					<Item name="START" type="integer" value="-1"/>
+					<Item name="TextDir6" type="boolean" value="false"/>
+					<Item name="TopMargin" type="double" value="36.000000"/>
+				</Items>
+				<Item name="Numbers" type="null"/>
+			</Items>
+		</Command>
+		<Command name="WorkflowPlaybackSaveFiles" pauseBefore="false" promptUser="false">
+			<Items>
+				<Item name="AddToBaseName" type="boolean" value="false"/>
+				<Item name="DocSaveDestType" type="string" value="WorkflowPlaybackSave"/>
+				<Item name="DontOverwrite" type="boolean" value="true"/>
+				<Item name="EmbedIndex" type="boolean" value="false"/>
+				<Item name="FileVariation" type="integer" value="0"/>
+				<Item name="HandleOutput" type="boolean" value="true"/>
+				<Item name="InsertAfterBaseName" type="text" value=""/>
+				<Item name="InsertBeforeBaseName" type="text" value=""/>
+				<Item name="NumbericNaming" type="boolean" value="false"/>
+				<Item name="OptimizePDF" type="boolean" value="true"/>
+				<Item name="PresetName" type="text" value="Files_For_Upload"/>
+				<Item name="RunPDFOptimizer" type="boolean" value="true"/>
+			</Items>
+		</Command>
+		<Command name="WorkflowPlaybackSaveFiles" pauseBefore="false" promptUser="false">
+			<Items>
+				<Item name="AddToBaseName" type="boolean" value="true"/>
+				<Item name="DocSaveDestType" type="string" value="WorkflowPlaybackSave"/>
+				<Item name="DontOverwrite" type="boolean" value="true"/>
+				<Item name="EmbedIndex" type="boolean" value="false"/>
+				<Item name="FileVariation" type="integer" value="0"/>
+				<Item name="HandleOutput" type="boolean" value="true"/>
+				<Item name="InsertAfterBaseName" type="text" value="-FINAL"/>
+				<Item name="InsertBeforeBaseName" type="text" value=""/>
+				<Item name="NumbericNaming" type="boolean" value="false"/>
+				<Item name="OptimizePDF" type="boolean" value="true"/>
+				<Item name="PresetName" type="text" value="Standard"/>
+				<Item name="RunPDFOptimizer" type="boolean" value="false"/>
+			</Items>
+		</Command>
+	</Group>
+</Workflow>

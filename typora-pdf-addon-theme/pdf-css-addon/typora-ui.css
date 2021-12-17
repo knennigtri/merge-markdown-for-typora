@@ -1,0 +1,75 @@
+/******************************************/
+/************* Typora UI Only *************/
+/******************************************/
+/* Max width in editor */
+.enable-diagrams {
+    max-width: 100% !important;
+}
+/* Hides typora hints when element is in focus */
+.enable-diagrams .md-focus::before{
+    content: "";
+}
+
+/* h tag typora hint messages */
+
+.enable-diagrams h1:first-of-type::before {
+    content: "[H1] Typora Hint: First H1 tag at top of Module. Page Break: None";
+    display: block;
+    font-size: var(--typora-hint-size);
+    font-style: italic;
+    color: #808080;
+}
+.enable-diagrams h1::before {
+    content: "[H1] Typora Hint: H1 should only be used at the top of the Module. Page Break: Before";
+    display: block;
+    font-size: var(--typora-hint-size);
+    font-style: italic;
+    color: #808080;
+}
+.enable-diagrams h2::before {
+    content: "[H2] Typora Hint: Use for main topics and exercises | inTOC=Yes | Page Break: Before";
+    display: block;
+    font-size: var(--typora-hint-size);
+    font-style: italic;
+    color: #808080;
+}
+.enable-diagrams h3::before {
+    content: "[H3] Typora Hint: Use for Use for sub-topics. | inTOC=Yes | Page Break: None";
+    display: block;
+    font-size: var(--typora-hint-size);
+    font-style: italic;
+    color: #808080;
+}
+.enable-diagrams h4::before {
+    content: "[H4] Typora Hint: Use for sub-sub-topics. | inTOC=No | Page Break: None";
+    display: block;
+    font-size: var(--typora-hint-size);
+    font-style: italic;
+    color: #808080;
+}
+.enable-diagrams h5::before {
+    content: "[H5] Typora Hint: | inTOC=No | Page Break: None";
+    display: block;
+    font-size: var(--typora-hint-size);
+    font-style: italic;
+    color: #808080;
+} 
+.enable-diagrams h6::before {
+    content: "[H6] Typora Hint:  | inTOC=No | Page Break: None";
+    display: block;
+    font-size: var(--typora-hint-size);
+    font-style: italic;
+    color: #808080;
+} 
+
+p>.md-image:only-child:not(.md-img-error) img, p>img:only-child {
+    border: 2px solid #8c8c8c;
+    margin-left: 0;
+}
+
+/* Code Block hint */
+.code-tooltip::before {
+    content: "Typora Hint: Specify Code Language >";
+    font-style: italic;
+    color: #808080;
+}

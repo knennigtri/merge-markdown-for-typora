@@ -1,0 +1,85 @@
+/************* TOC Customization *************/
+/* TOC title  */
+/*
+.md-toc::before {
+    content: "Contents";
+    font-size: var(--h2-size);
+}
+*/
+
+/*
+.md-toc {
+    margin-top: 1em;
+}
+*/
+
+/*
+.md-toc-content {
+    border-top: .5em solid #000;
+    margin-top: .5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #c5c5c5;
+}
+*/
+
+/* TOC black links */
+.md-toc-inner {
+    color: #000;
+}
+
+/* Hide the first h1 (course title) from TOC */
+.md-toc-h1:first-of-type {
+    display: none;
+}
+
+/* Hide the second h1 (TOC title) from TOC */
+.md-toc-h1:nth-of-type(2) {
+    display: none;
+}
+
+/***** level 1 style *****/
+.md-toc-h1 .md-toc-inner {
+    margin-left: 0em;
+    font-size: var(--toc-level-1);
+    font-weight: normal;
+}
+/* adds a thin line between modules */
+.md-toc-item.md-toc-h1 {
+    border-top: .1em solid #808080;
+}
+.md-toc-h1:nth-of-type(3) {
+    border-top: none;
+}
+
+/***** Level 2 style *****/
+.md-toc-h2 .md-toc-inner {
+    margin-left: 4em;
+    font-size: var(--toc-level-2);
+}
+.md-toc-h3 .md-toc-inner {
+    margin-left: 4em;
+    color: gray;
+    font-size: var(--toc-level-2);
+}
+
+/* Remove h4, h5 and h6 tags from the TOC */
+.md-toc-h4,
+.md-toc-h5,
+.md-toc-h6 {
+    display: none;
+}
+
+
+/******************************************/
+/************* Typora UI Only *************/
+/******************************************/
+/*
+.enable-diagrams .md-toc::before {
+    content: "Typora Hint: Auto generated TOC. Page Break: Before";
+    display: block;
+    font-size: small;
+    font-style: italic;
+    color: #808080;
+}
+*/

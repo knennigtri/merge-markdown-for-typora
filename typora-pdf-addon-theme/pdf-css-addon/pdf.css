@@ -1,0 +1,53 @@
+/************* PDF Output Only *************/
+@media print {
+    /* global variables for pdf output */
+   :root {
+    --title-size: 22pt;
+    --toc-level-1: 1.3em;
+    --toc-level-2: 1em;
+    --h1-size: 20pt;
+    --h2-size: 19pt;
+    --h3-size: 18pt;
+    --h4-size: 14pt;
+    --p-size: 11pt;
+    --copyright-size: .8em;
+    --typora-hint-size: 8pt;
+    }
+
+    /* Move h1, h2, and TOC to a new page */
+    h1,
+    h2 {
+        page-break-before: always;
+        break-before: page;
+    }
+    .md-toc {
+        page-break-after: always;
+        break-after: page;
+    }
+
+    /* First h1 heading of document */
+    h1:first-of-type {
+        page-break-before: avoid;
+        break-before: avoid;
+    }
+    h3,
+    h4,
+    h5,
+    h6 {    
+        page-break-after: avoid;
+        break-after: avoid-page;  
+    }
+    .CodeMirror,
+    blockquote,
+    figure,
+    table,
+    li,
+    p {
+        page-break-inside: avoid;
+    }
+    /*  Optional Page Break */
+    .page-break {
+        page-break-after: always;
+        break-after: page;
+    }
+}
