@@ -2,8 +2,6 @@
 typora-copy-images-to: links
 ---
 
-
-
 # Title of Module (h1)
 
 This is the introduction to this module/chapter. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada ex quis velit convallis malesuada. Aenean scelerisque, felis vitae dictum porttitor, libero nunc convallis velit, non posuere est justo nec purus. Vivamus lacus odio, lacinia vitae scelerisque sed, cursus a arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla egestas tincidunt leo ut varius. Cras porttitor et diam malesuada auctor.

@@ -1,18 +1,5 @@
 # Use merge-markdown in QA mode
-
-### Prework
-
-1. Have [Typora](https://typora.io/) installed
-
-2. Install npm: https://www.npmjs.com/get-npm
-
-3. Install merge-markdown:
-
-   ``` bash
-   $ npm install -g merge-markdown
-   ```
-
-> Learn more about this project here: https://www.npmjs.com/package/merge-markdown
+**Prerequisite:** merge-markdown must be [installed](install.md)
 
 ## Update manifest to use QA
 
